@@ -1,0 +1,5 @@
+       Prefix Verb URI Pattern         Controller#Action
+         root GET  /                   ticket_times#show_date
+        count POST /                   ticket_times#count
+show_download GET  /report(.:format)   ticket_times#show_download
+     download GET  /download(.:format) ticket_times#download

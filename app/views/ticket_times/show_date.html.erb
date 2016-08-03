@@ -1,0 +1,10 @@
+<%= form_for(count_path, remote: true) do |f| %>
+  
+  <div class="field">
+    <%= f.datetime_select :time, include_seconds: true %>
+  </div>
+  <h2 id="count"></h2>
+  <div class="actions">
+    <%= f.submit "Get count" %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<%= form_for(:ticket_time, url: url_for(download_path(format: :csv)), method: :get, multipart: true) do |f| %>
+  
+  <div class="field">
+    <%= f.date_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Download report" %>
+  </div>
+<% end %>
