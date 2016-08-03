@@ -16,3 +16,9 @@ rails server
 '/' - is pointing to the screen to get the user count at a given time
 '/report' - generates a file for end of day 
 ```
+
+
+## Data
+```
+rake ticket:populate - populates sample data from 2016/01/01 till today.
+```
