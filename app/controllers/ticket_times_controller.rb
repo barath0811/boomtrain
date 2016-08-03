@@ -6,6 +6,7 @@ class TicketTimesController < ApplicationController
   def count
     # binding.pry
     time = Time.new *flatten_time_array(params["/"])
+    time = Time.zone.local_to_utc(time)
     @count = TicketTime.get_count time
     respond_to do |format|
       format.js
